@@ -1,4 +1,4 @@
-defmodule Dataingestion.StreamConsumer do
+defmodule DataIngestion.StreamConsumer do
   use GenServer
 
   def start_link do
