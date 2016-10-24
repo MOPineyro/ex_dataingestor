@@ -5,7 +5,7 @@ defmodule DataIngestion do
     import Supervisor.Spec, warn: false
 
     children = [
-      worker(DataIngestion.StreamConsumer, [])
+      worker(DataIngestion.StreamConsumer, [:default])
     ]
 
     opts = [strategy: :one_for_one, name: DataIngestion.Supervisor]
