@@ -14,7 +14,8 @@ defmodule DataIngestion.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :eventsource_ex]]
+    [mod: {DataIngestion, []},
+     applications: [:logger, :eventsource_ex]]
   end
 
   # Dependencies can be Hex packages:
